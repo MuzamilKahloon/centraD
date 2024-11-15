@@ -1,4 +1,4 @@
-import vid1 from '../../public/centra/videoframe_0.png'
+import vid1 from '../../public/centra/video1.mp4'
 import vid2 from '../../public/centra/video2.mp4'
 const Hero = () => {
   return (
@@ -22,9 +22,11 @@ const Hero = () => {
       </div>
       <div className="flex justify-center mt-10">
         <video autoPlay loop muted className='w-1/2 mx-2 my-2 border border-orange-700 rounded-lg shadow-orange-400'>
+        <source src={vid1} type='video/mp4' />
+        </video>
+        <video autoPlay loop muted className='w-1/2 mx-2 my-2 border border-orange-700 rounded-lg shadow-orange-400'>
         <source src={vid2} type='video/mp4' />
         </video>
-        <img src={vid1} className='w-1/2 mx-2 my-2 border border-orange-700 rounded-lg shadow-orange-400' alt="" />
       </div>
     </div>
   )
